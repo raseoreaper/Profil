@@ -1,0 +1,243 @@
+/*--Global-----------------------------------------------------------*/
+p,h1,h2,h3,ul{
+    color: white;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
+
+h2{
+    font-family: 'Permanent Marker', cursive;
+}
+
+h3{
+    font-family: 'Acme', sans-serif;
+}
+
+section p{
+    font-family: 'Noto Serif', serif; 
+}
+
+
+/*--HTML-------------------------------------------------------------*/
+
+
+/*--Body-------------------------------------------------------------*/
+
+body{
+    margin:0;
+    padding: 0;
+    background-image:url("../images/code.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+/*Media query----------------*/
+@media (min-width: 1400px) {
+    body{
+        width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 300px) {
+    body{
+        width: 300px;
+    }
+}
+
+/*--Header-----------------------------------------------------------*/
+
+header{
+    background-color: #5b0b0b;
+    padding-top: 10px;
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+header img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: auto;
+    height: 180px;
+}
+
+#cv{
+    background-color: #292a2b;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    padding:10px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-family: 'Acme', sans-serif;
+}
+
+/*Media query----------------*/
+@media (max-width: 450px) {
+    header{
+        height: 350px;
+    }
+}
+
+
+/*--Nav--------------------------------------------------------------*/
+nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #5b0b0b;
+    height: 50px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+nav ul li:hover {
+    background-color: #000000;
+    height: 50px;
+}
+    
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    padding-top: 5px;
+    }
+
+nav ul li {
+    float: left;
+    width: 33.33%;
+}
+
+@media (max-width: 350px) {
+    nav ul li {
+    float: left;
+    width: 100%;
+}
+    nav ul{
+        height:150px;
+    }
+}
+
+/*--Section----------------------------------------------------------*/
+section{
+    background-color: #292a2b;
+    border:1px solid black;
+    padding: 10px;
+}
+
+.article{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 50px;
+    overflow: hidden;
+}
+
+.page{
+    display: block;
+    text-align: center;
+    float:left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+
+.info a{
+    color: yellow;
+    text-decoration: none;
+}
+
+.image_1{
+    float: left;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    width: 40%;
+    border-radius: 5%;
+    margin-right: 10px;
+    
+}
+
+/*--Média query--*/
+@media (max-width: 450px) {
+
+    .image_1{
+        width:100%;
+        margin-bottom: 10px;
+    }
+}
+
+/*--Média query--*/
+@media (min-width: 900px) {
+  .left30 {
+    width: 30%;
+    float: left;
+  }
+  .left70 {
+    width: 69%;
+    float: left;
+    padding-left: 20px;
+  }
+}
+
+
+/*--Footer-----------------------------------------------------------*/
+
+footer{
+    background-color: #5b0b0b;
+    height: 120px;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
+
+.contact{
+    font-size:30px;
+    color: aqua;
+    padding: 10px 0px 0px 0px;
+}
+
+.contact a{
+    color: white;
+    padding: 0px 10px 0px 10px;
+}
+
+.contact a:hover{
+    background-color: #000000;
+}
+
+footer p{
+    text-align: center;
+    font-size: 25px;
+    padding: 0px 0px 30px 0px;
+}
+
+/*--Média query--*/
+@media (max-width: 510px) {
+    footer{
+        height: 150px;
+    }
+}
